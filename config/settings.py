@@ -63,8 +63,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'DATABASE': 'demo-aws',
+        'USER': 'admin',
+        'PASSWORD': 'addweb123',
+        'HOST' : 'demo-aws.cibh0y9gtcvi.us-west-2.rds.amazonaws.com',
+        'PORT' : 3306,
     }
 }
 
