@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-58i(egni*#fh^9n!z2a3$$x_k#!wedh*heav+=3d9u#^yj)0z^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['54.184.251.187']
+ALLOWED_HOSTS = ["*"]
 
 
 # Application definition
@@ -64,7 +64,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'DATABASE': 'demo-aws',
+        'NAME': 'djangodemo',
         'USER': 'admin',
         'PASSWORD': 'addweb123',
         'HOST' : 'demo-aws.cibh0y9gtcvi.us-west-2.rds.amazonaws.com',
