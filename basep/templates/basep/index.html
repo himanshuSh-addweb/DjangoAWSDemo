@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +12,7 @@
     <h1>Demo</h1>
     {% for wall in wallpaers %}
         <h3>{{ wall.name }}</h3>
-        <img src="{{ wall.img.url }}" width="300">
+        <img src="{{ wall.img.url }}" width="500">
     {% endfor %}
 </body>
 </html>
